@@ -24,4 +24,8 @@ public class FeedbackService {
     public Feedback editResponse(Feedback feedback) {
         return repo.save(feedback);
     }
+
+    public void deleteFeedbackById(int id) {
+        repo.deleteById(id);
+    }
 }

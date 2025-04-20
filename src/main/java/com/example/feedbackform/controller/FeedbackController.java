@@ -29,4 +29,10 @@ public class FeedbackController {
         return service.editResponse(feedback);
     }
 
+    @DeleteMapping("feedback/{id}")
+    public void deleteFeedback(@PathVariable int id) {
+        service.deleteFeedbackById(id);
+        System.out.println("Deleted");
+    }
+
 }
