@@ -16,4 +16,8 @@ public class FeedbackService {
     public List<Feedback> getAllFeedback() {
         return repo.findAll();
     }
+
+    public Feedback addFeedback(Feedback feedback) {
+        return repo.save(feedback);
+    }
 }
