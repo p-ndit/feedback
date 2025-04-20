@@ -17,7 +17,7 @@ public class FeedbackController {
     @Autowired
     private FeedbackService service;
 
-    @GetMapping
+    @GetMapping("feedback")
     public List<Feedback> getFeedback() {
         return service.getAllFeedback();
     }
