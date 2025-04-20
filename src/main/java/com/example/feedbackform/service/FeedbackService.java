@@ -20,4 +20,8 @@ public class FeedbackService {
     public Feedback addFeedback(Feedback feedback) {
         return repo.save(feedback);
     }
+
+    public Feedback editResponse(Feedback feedback) {
+        return repo.save(feedback);
+    }
 }

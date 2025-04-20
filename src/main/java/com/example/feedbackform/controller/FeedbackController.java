@@ -24,4 +24,9 @@ public class FeedbackController {
         return service.addFeedback(feedback);
     }
 
+    @PutMapping("editfeedback")
+    public Feedback editFeedback(@RequestBody Feedback feedback) {
+        return service.editResponse(feedback);
+    }
+
 }
